@@ -7,7 +7,7 @@ const getPokemonData = async term => {
     document.getElementById('show_error').classList.remove('show')
     document.getElementById('show_error').classList.add('hidden')
         
-    const url = `https://pokeapi.co/api/v2/pokemon/${term}`
+    const url = `https://pokeapi.co/api/v2/pokemon/${term.toLowerCase()}`
     const response = await fetch(url)
 
     if(response.status == 404 || response.statusText == 'Not Found'){
