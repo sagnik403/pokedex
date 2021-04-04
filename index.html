@@ -1,22 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Pokemon Codex</title>
+    <title>PokeDex</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="snorlax.jpg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 </head>
   <body>
     
 
     <div class="container flex-center">
       <h2>PokeDex</h2>
-      <small class="text-muted">Is your pokemon on our Codex?</small>
+      <small class="text-muted">Is your pokemon on our PokeDex?</small>
+      <button type="button" id="dark" class="btn btn-default">Light Mode</button>
       <div class="search-container col-md-5 col-sm-5">
         <input type="text" class="form-control" id="search_q" placeholder="Search pokemon by name">
         <button class="btn-search" id="search-btn">
