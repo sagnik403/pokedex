@@ -35,3 +35,27 @@ const getPokemonData = async term => {
 
 search_btn.addEventListener('click', () => getPokemonData(search_term.value))
 
+$(document).ready(function(){
+    $("#dark").click(function(){
+        var btntxt = $("#dark").text()
+
+        if(btntxt == "Light Mode"){
+            $("#dark").html("Dark Mode")
+            $("#dark").css("background-color","#00688B")
+            $("#dark").css("color","#eee")
+            $(".flex-center").css("background-color","#fff")
+            $(".flex-center").css("color","black")
+            $(".detail-container").css("background-color","#eee")
+            
+        }
+        else{
+            $("#dark").html("Light Mode")
+            $("#dark").css("background-color","#fff")
+            $("#dark").css("color","black")
+            $(".flex-center").css("background-color","#121212")
+            $(".flex-center").css("color","#14ebf7")
+            $(".detail-container").css("background-color","#242526")
+            
+        }
+    })
+})
