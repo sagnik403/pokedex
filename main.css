@@ -1,4 +1,8 @@
-
+#dark{
+    position: relative;
+    left: 150px;
+    top:-25px;
+}
 
 img {
     width: 80%;
@@ -81,10 +85,11 @@ input:focus {
     background-color: #242526;
     width: 100%;
     margin-top: -150px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 8px rgba(15, 15, 15, 0.3);
 }
 .seperator {
     border-color:  #26d0ce !important;
+    /* background: linear-gradient(to right, #1a2980, #26d0ce) !important ; */
     border-width: 10px;
     border-radius: 5px;
 }
